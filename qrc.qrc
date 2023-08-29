@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/qrc">
+        <file>pexels-pixabay-264636.jpg</file>
+        <file>images.jpeg</file>
+        <file>images.jpg</file>
+        <file>v.png</file>
+        <file>GO.png</file>
+        <file>golden-7257769_960_720.png</file>
+        <file>up_arrow.png</file>
+    </qresource>
+    <qresource prefix="/new/payment_method"/>
+    <qresource prefix="/">
+        <file>images.jpeg</file>
+        <file>down_arrow.png</file>
+    </qresource>
+</RCC>
