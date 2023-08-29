@@ -4,6 +4,7 @@
 #include <QProcess>
 #include <QList>
 #include <QLCDNumber>
+#include <QDebug>
 
 
 slot_Fechar::slot_Fechar(QWidget *parent) :
@@ -15,7 +16,9 @@ slot_Fechar::slot_Fechar(QWidget *parent) :
     QSqlDatabase db;
     db = QSqlDatabase::addDatabase("QSQLITE");
     QString path = "/home/cleber/login/db/fechamento_de_caixa.db";
+    qDebug() << "Testing debug: "<<path;
     db.setDatabaseName(path);
+
     if( !db.open() )
     {
         QMessageBox::critical(this, "ERRO", "Houve um erro na conexão com o banco de dados");
